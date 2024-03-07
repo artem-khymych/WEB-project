@@ -7,44 +7,76 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
-<header id="header">
-    <h1>Ласкаво просимо до книжкового магазину</h1>
-    <h2>Найкращі книги за доступними цінами</h2>
-    <form action="#" method="get" id="search-form" class="book-search-form">
-        <label for="book-search">Пошук книги:</label>
-        <input type="text" id="book-search" name="book-search" placeholder="Введіть назву книги">
-        <button type="submit">Пошук</button>
-    </form>
-</header>
-<main id="main">
-    <aside id="sidebar">
-        <h3>Меню</h3>
-        <ul>
-            <li><a href="#">Категорія 1</a></li>
-            <li><a href="#">Категорія 2</a></li>
-            <li><a href="#">Категорія 3</a></li>
-        </ul>
-    </aside>
-    <div id="content">
-        <div id="popular-books">
-            <h2>Найпопулярніші книги</h2>
-            <div class="book">
-                <img src="book1.jpg" alt="Зображення книги 1">
-                <h3>Назва книги 1</h3>
-                <p>Автор: Автор 1</p>
-            </div>
-            <div class="book">
-                <img src="book2.jpg" alt="Зображення книги 2">
-                <h3>Назва книги 2</h3>
-                <p>Автор: Автор 2</p>
-            </div>
-            <!-- Додайте інші книги за необхідності -->
+    <header id="header">
+        <h1>Назва</h1>
+        <form action="#" method="get" id="search-form" class="book-search-form">
+            <label for="book-search">Пошук книги:</label>
+            <input type="text" id="book-search" name="book-search" placeholder="Введіть назву книги">
+            <button class="header-buttons" type="submit" id="search-button">Пошук</button>
+        </form>
+        <div class="header-buttons">
+            <button id="cart-button">Кошик</button>
+            <button id="login-button">Увійти</button>
+            <button id="categories-button">Категорії</button>
         </div>
-    </div>
-</main>
-<footer id="footer">
-    <p>&copy; 2024 Книжковий магазин. Усі права захищені.</p>
-</footer>
+    </header>
+
+    <main id="main">
+        <aside id="sidebar">
+            <h3>Меню</h3>
+            <ul>
+                <li><a href="#">Категорія 1</a></li>
+                <li><a href="#">Категорія 2</a></li>
+                <li><a href="#">Категорія 3</a></li>
+            </ul>
+        </aside>
+        <div id="content">
+            <div id="popular-books">
+                <h2>Найпопулярніші книги</h2>
+                <div class="book">
+                    <img src="book1.jpg" alt="Зображення книги 1">
+                    <h3>Назва книги 1</h3>
+                    <p>Автор: Автор 1</p>
+                </div>
+                <div class="book">
+                    <img src="book2.jpg" alt="Зображення книги 2">
+                    <h3>Назва книги 2</h3>
+                    <p>Автор: Автор 2</p>
+                </div>
+            </div>
+            <div id="new-incomes">
+                <h2>Новинки</h2>
+                <div class="book">
+                    <img src="book1.jpg" alt="Зображення книги 1">
+                    <h3>Назва книги 1</h3>
+                    <p>Автор: Автор 1</p>
+                </div>
+                <div class="book">
+                    <img src="book2.jpg" alt="Зображення книги 2">
+                    <h3>Назва книги 2</h3>
+                    <p>Автор: Автор 2</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+
+
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank" class="social-link"><img src="content/media/inst.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="social-link"><img src="content/media/face.png" alt="Facebook"></a>
+            <div class="social-phone">
+                <p>Без вихідних, з 9 до 20</p>
+                <a id="phone" href="tel:">+3801111111111</a>
+                <p>Безкоштовно про україні</p>
+
+            </div>
+        </div>
+        <p id="copyright">&copy; 2024 Книжковий магазин. Усі права захищені.</p>
+
+
+    </footer>
 </body>
 </html>
 

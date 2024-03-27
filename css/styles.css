@@ -85,9 +85,12 @@ footer {
     margin: 10px;
     display: inline-block;
     border-radius: 5px;
+    max-width: 200px;
+    min-width: 200px;
 }
 .book img {
     max-width: 100px;
+    min-height: 150px;
     max-height: 150px;
     display: block;
     margin: 0 auto 10px;
@@ -109,4 +112,14 @@ footer {
 }
 .social-phone p{
     font-size: 12px;
+}
+#sidebar li{
+    background-color: #3f51b5;
+}
+#sidebar a{
+    color: white;
+
+}
+#sidebar li:hover{
+    background-color: #555;
 }

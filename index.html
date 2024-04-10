@@ -12,23 +12,26 @@
         <form action="#" method="get" id="search-form" class="book-search-form">
             <label for="book-search">Пошук книги:</label>
             <input type="text" id="book-search" name="book-search" placeholder="Введіть назву книги">
-            <button class="header-buttons" type="submit" id="search-button">Пошук</button>
+            <button  type="submit" id="search-button">Пошук</button>
         </form>
-        <div class="header-buttons">
-            <button id="cart-button">Кошик</button>
-            <button id="login-button">Увійти</button>
-            <button id="categories-button">Категорії</button>
+        <div class="dropdown">
+            <button class="dropdown-button">Меню</button>
+            <div class="dropdown-content">
+                <a class="button-main" href="#" id="cart-button">Кошик</a>
+                <a class="button-main" href="#" id="login-button">Увійти</a>
+                <a class="button-main" href="#" id="categories-button">Категорії</a>
+            </div>
         </div>
     </header>
 
     <main id="main">
         <aside id="sidebar">
             <h3>Меню</h3>
-            <ul>
-                <li><a href="#">Друковані книги</a></li>
-                <li><a href="#">Електронні книги</a></li>
-                <li><a href="#">Аудіокниги</a></li>
-            </ul>
+            <div id ="menu">
+                <a class="button-main" href="#">Друковані книги</a>
+                <a class="button-main" href="#">Електронні книги</a>
+                <a class="button-main" href="#">Аудіокниги</a>
+            </div>
         </aside>
         <div id="content">
             <div id="popular-books">
@@ -59,8 +62,6 @@
         </div>
     </main>
     <footer id="footer">
-
-
 
         <div class="social-links">
             <a href="https://www.instagram.com/" target="_blank" class="social-link"><img src="content/media/inst.png" alt="Instagram"></a>

@@ -330,7 +330,7 @@ footer {
         background-color: #f1f1f1;
     }
 
-    .dropdown:hover .dropdown-content {
+    .dropdown:active .dropdown-content {
         display: block;
     }
 

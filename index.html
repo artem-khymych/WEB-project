@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Книжковий магазин</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body>
     <header id="header">
@@ -34,9 +36,10 @@
             </div>
         </aside>
         <div id="content">
-            <div id="popular-books">
-                <h2>Найпопулярніші книги</h2>
-                <div class="book">
+
+            <h2>Найпопулярніші книги</h2>
+            <div id="popular-books"  class="owl-carousel">
+                <div  class="book">
                     <img src="content/media/preview/img.png" alt="Зображення книги 1">
                     <h3>Король-малюк</h3>
                     <p>Упяна Чуба</p>
@@ -46,9 +49,30 @@
                     <h3>Молодша Едда</h3>
                     <p>Сноррі Стурлусон</p>
                 </div>
+                <div  class="book">
+                    <img src="content/media/preview/img_6.png" alt="Зображення книги 1">
+                    <h3>Він</h3>
+                    <p>Харлан Кобен</p>
+                </div>
+                <div class="book">
+                    <img src="content/media/preview/img_7.png" alt="Зображення книги 2">
+                    <h3>Пазл</h3>
+                    <p>Франк Тільє</p>
+                </div>
+                <div class="book">
+                    <img src="content/media/preview/img_8.png" alt="Зображення книги 2">
+                    <h3>Самотність у мережі</h3>
+                    <p>Януш Леон Вишневський</p>
+                </div>
+                <div class="book">
+                    <img src="content/media/preview/img_10.png" alt="Зображення книги 2">
+                    <h3>Ретрит</h3>
+                    <p>Сара Пірс</p>
+                </div>
             </div>
-            <div id="new-incomes">
-                <h2>Новинки </h2>
+
+            <h2>Новинки </h2>
+            <div id="new-incomes"  class="owl-carousel">
                 <div class="book">
                     <img src="content/media/preview/img_2.png" alt="Зображення книги 1">
                     <h3>Червона Вода</h3>
@@ -57,6 +81,21 @@
                 <div class="book">
                     <img src="content/media/preview/img_3.png" alt="Зображення книги 2">
                     <h3>Журнал Forbes Ukraine. #1 Лютий-Березень 2024</h3>
+                </div>
+                <div class="book">
+                    <img src="content/media/preview/img_4.png" alt="Зображення книги 1">
+                    <h3>Стрімка могила</h3>
+                    <p>Роберт Ґалбрейт</p>
+                </div>
+                <div class="book">
+                    <img src="content/media/preview/img_5.png" alt="Зображення книги 2">
+                    <h3>Культ</h3>
+                    <p>Любко Дереш</p>
+                </div>
+                <div class="book">
+                    <img src="content/media/preview/img_9.png" alt="Зображення книги 2">
+                    <h3>Світло та композиція</h3>
+                    <p>Борис Крупник</p>
                 </div>
             </div>
         </div>
@@ -74,9 +113,29 @@
             </div>
         </div>
         <p id="copyright">&copy; 2024 Книжковий магазин. Усі права захищені.</p>
-
-
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:20,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 
